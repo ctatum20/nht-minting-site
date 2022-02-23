@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { MoralisProvider } from "react-moralis";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+     <MoralisProvider appId="ztX4Kjnrku5fpmiL4B3xkPYvFxTRJRRWXwinr872" serverUrl="https://hnkgo1ik7nd0.usemoralis.com:2053/server">
+      <App />
+    </MoralisProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

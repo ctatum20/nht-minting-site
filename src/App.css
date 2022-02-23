@@ -1,38 +1,98 @@
+@import url(//db.onlinewebfonts.com/c/c0cd6ec8ce6d2bbd315a13b62ed13550?family=AdihausDIN);
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'AdihausDIN', Helvetica, arial;;
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  background-color: black;
+  width: 960px;
+  height: 70vh;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background-video {
+  position:fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.right-main {
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+}
+h2 {
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 30px;
+  align-items: end;
+}
+
+.filled {
+  padding: 15px 50px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.25s all ease-in-out;
+}
+
+.filled:hover {
+  background-color: #333;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.transparent {
+  padding: 15px 50px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.25s all ease-in-out;
+  background-color: black;
+  color: white;
+  border: 1px solid white
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transparent:hover, transparent:hover {
+  background-color: #333;
+  color: gray ;
 }
